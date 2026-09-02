@@ -7,6 +7,12 @@
   --body-color: #918ca4;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 /* Typography */
 html {
   font-size: 62.5%;
@@ -164,3 +170,64 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+/* buttons */
+.btn {
+  font-size: 1.8rem;
+  border-radius: 40px;
+  padding: 2rem 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  margin: 1rem 0;
+}
+
+.btn--primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.btn--primary:hover {
+  background-color: #3a8ffd;
+}
+
+.btn--secondary {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+.btn--secondary:hover {
+  background-color: #00c8eb;
+}
+
+.btn--accent {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+.btn--accent:hover {
+  background-color: #ec3000;
+}
+
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+
+.btn--outline {
+  background-color: transparent;
+  border: 2px solid var(--headings-color);
+  color: var(--headings-color);
+}
+.btn--outline:hover {
+  background-color: var(--headings-color);
+  color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
+}
+
+/* inputs */
