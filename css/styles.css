@@ -602,6 +602,7 @@ input.input {
 
 .container {
   max-width: 1140px;
+  margin: auto;
 }
 
 /* navigation bar */
@@ -671,6 +672,7 @@ input.input {
 .hero {
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
+
 .hero__image {
   width: 100%;
 }
